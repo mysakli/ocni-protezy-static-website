@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oční protézy</title>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -16,351 +15,349 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TH9PSVQ');</script>
     <!-- End Google Tag Manager -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yaldevi:wght@300;400;500;600;700&display=swap"
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
         rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="./resources/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png"
-        sizes="32x32" href="./resources/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png"
-        sizes="16x16" href="./resources/favicons/favicon-16x16.png">
-    <link rel="manifest"
-        href="./resources/favicons/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#16191C',
+                        surface: '#F7F9F8',
+                        iris: {
+                            DEFAULT: '#2C5F66',
+                            dark: '#1F454A',
+                            light: '#EAF3F1'
+                        },
+                        fleck: '#C8863F',
+                        tint: '#E9F1EF',
+                        hairline: '#D8E3E1'
+                    },
+                    fontFamily: {
+                        display: ['"Fraunces"', 'serif'],
+                        sans: ['"Atkinson Hyperlegible"', 'ui-sans-serif', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            font-size: 112.5%;
+            /* ~18px base for easier reading */
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal {
+                opacity: 0;
+                transform: translateY(12px);
+                transition: opacity .6s ease, transform .6s ease;
+            }
+
+            .reveal.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./resources/favicons/site.webmanifest">
 </head>
 
-<body>
+<body class="font-sans text-ink bg-surface antialiased">
+
     <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
         <symbol id="icon-eye" viewBox="0 0 24 24">
             <path fill="currentColor"
-                d="M12,9.5A2.5,2.5 0 0,0 9.5,12A2.5,2.5 0 0,0 12,14.5A2.5,2.5 0 0,0 14.5,12A2.5,2.5 0 0,0 12,9.5M12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13M12,9.5A2.5,2.5 0 0,0 9.5,12A2.5,2.5 0 0,0 12,14.5A2.5,2.5 0 0,0 14.5,12A2.5,2.5 0 0,0 12,9.5M12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,16C9.37,16 7,14.43 6,12C7.38,8.69 11.19,7.12 14.5,8.5C16.08,9.16 17.34,10.42 18,12C17,14.43 14.63,16 12,16M12,9.5A2.5,2.5 0 0,0 9.5,12A2.5,2.5 0 0,0 12,14.5A2.5,2.5 0 0,0 14.5,12A2.5,2.5 0 0,0 12,9.5M12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13Z" />
+                d="M12,9.5A2.5,2.5 0 0,0 9.5,12A2.5,2.5 0 0,0 12,14.5A2.5,2.5 0 0,0 14.5,12A2.5,2.5 0 0,0 12,9.5M12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,16C9.37,16 7,14.43 6,12C7.38,8.69 11.19,7.12 14.5,8.5C16.08,9.16 17.34,10.42 18,12C17,14.43 14.63,16 12,16Z" />
         </symbol>
         <symbol id="icon-alert" viewBox="0 0 24 24">
             <path fill="currentColor"
                 d="M11,15H13V17H11V15M11,7H13V13H11V7M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z" />
         </symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </symbol>
     </svg>
-    <a class="skip-link" href="#main-content">Přeskočit na hlavní obsah</a>
+
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-iris focus:px-6 focus:py-3 focus:text-white focus:text-lg focus:font-bold focus:shadow-lg">
+        Přeskočit na hlavní obsah
+    </a>
+
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TH9PSVQ"
-            height="0" width="0"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH9PSVQ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./resources/logo.svg"
-                    alt="Jitka Klíčníková - Oční protézy"
-                    height="100%" />
-            </div>
-            <div class="phone-and-menu">
-                <div>
-                    <a class="phoneclick"
-                        href="tel:+420722959360"
-                        aria-label="+420 722 959 360">
-                        <svg style="width:20px;height:20px;padding-top:5px;"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true">
-                            <path
-                                fill="RGBA(87, 141, 176, 0.87)"
-                                d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
-                        </svg>
-                        <span aria-hidden="true">+420 722 959
-                            360</span>
-                    </a>
 
-                </div>
-                <div class="dropdown">
-                    <button type="button"
-                        class="menu-toggle"
-                        id="menu-toggle"
-                        aria-expanded="false"
-                        aria-controls="dropdown-menu">Menu</button>
-                    <ul class="dropdown-content"
-                        id="dropdown-menu">
-                        <li><a class="navpanel"
-                                id="navpanel-top"
-                                href="#objednat_termin">Objednání</a></li>
-                        <li><a class="navpanel"
-                                href="#poukaz">Poukazy a platba</a></li>
-                        <li><a class="navpanel"
-                                href="#kde">Kde nás najdete</a></li>
-                        <li><a class="navpanel"
-                                href="./resources/docs/pouziti-protezy.pdf"
-                                target="_blank">Návod k protéze</a></li>
-                        <li><a class="navpanel"
-                                id="navpanel-bottom"
-                                href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
+    <header class="sticky top-0 z-40 bg-surface/95 backdrop-blur border-b border-hairline">
+        <nav class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+            <a href="#main-content" class="flex items-center gap-3 shrink-0">
+                <img src="./resources/logo.svg" alt="Jitka Klíčníková - Oční protézy" class="h-9 sm:h-11 w-auto" />
+            </a>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="tel:+420722959360" aria-label="Zavolat na +420 722 959 360"
+                    class="flex items-center gap-2 rounded-full bg-iris-light text-iris-dark font-bold px-4 sm:px-5 py-3 text-base sm:text-lg hover:bg-iris hover:text-white transition-colors focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">
+                    <svg class="h-5 w-5 shrink-0" aria-hidden="true">
+                        <use href="#icon-phone"></use>
+                    </svg>
+                    <span class="whitespace-nowrap">+420&nbsp;722&nbsp;959&nbsp;360</span>
+                </a>
+
+                <!-- desktop nav -->
+                <ul class="hidden md:flex items-center gap-1 text-lg font-bold">
+                    <li><a href="#objednat_termin"
+                            class="block rounded-full px-4 py-3 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Objednání</a>
+                    </li>
+                    <li><a href="#poukaz"
+                            class="block rounded-full px-4 py-3 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Poukazy</a>
+                    </li>
+                    <li><a href="#kde"
+                            class="block rounded-full px-4 py-3 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Kde
+                            nás najdete</a></li>
+                    <li><a href="./resources/docs/pouziti-protezy.pdf" target="_blank"
+                            class="block rounded-full px-4 py-3 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Návod</a>
+                    </li>
+                    <li><a href="#kontakt"
+                            class="block rounded-full px-4 py-3 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Kontakt</a>
+                    </li>
+                </ul>
+
+                <!-- mobile menu toggle -->
+                <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
+                    class="md:hidden flex items-center gap-2 rounded-full border-2 border-hairline px-4 py-3 text-lg font-bold hover:border-iris focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">
+                    <svg class="h-5 w-5" aria-hidden="true" id="menu-icon-open">
+                        <use href="#icon-menu"></use>
+                    </svg>
+                    <svg class="h-5 w-5 hidden" aria-hidden="true" id="menu-icon-close">
+                        <use href="#icon-close"></use>
+                    </svg>
+                    <span>Menu</span>
+                </button>
             </div>
         </nav>
 
-
-        <div id="motto">
-            <h1>Vyrábíme pro Vás<br>oční
-                akrylátové protézy<br>již 30 let.
-            </h1>
-        </div>
+        <!-- mobile menu panel -->
+        <ul id="mobile-menu" class="hidden md:hidden border-t border-hairline bg-surface px-4 py-2 text-lg font-bold">
+            <li><a href="#objednat_termin"
+                    class="block rounded-xl px-4 py-4 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Objednání</a>
+            </li>
+            <li><a href="#poukaz"
+                    class="block rounded-xl px-4 py-4 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Poukazy
+                    a platba</a></li>
+            <li><a href="#kde"
+                    class="block rounded-xl px-4 py-4 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Kde
+                    nás najdete</a></li>
+            <li><a href="./resources/docs/pouziti-protezy.pdf" target="_blank"
+                    class="block rounded-xl px-4 py-4 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Návod
+                    k protéze</a></li>
+            <li><a href="#kontakt"
+                    class="block rounded-xl px-4 py-4 hover:bg-iris-light hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck">Kontakt</a>
+            </li>
+        </ul>
     </header>
 
-    <div class="aktualne">
-
-        <!-- <div class="aktualne-content alert alert-warning" role="alert">
-            <div id="alert-icon">
-                <svg class="alert-icon" viewBox="0 0 24 24" width="35" height="35" aria-hidden="true"><use href="#icon-alert"></use></svg>
-            </div>
-            <div>
-                <h2>Aktuální sdělení</h2>
-                <p>DOVOLENÁ v termínu <b>23. - 31. 7. 2026</b> </p>
-                <p>Pacienti musí při vstupu do ordinace předložit <b>potvrzení o očkování</b> nebo <b>negativní PCR test</b> starý max. 24h.</p>
-                <p>Vstup do ordinace pouze <b>v
-                        respirátoru</b> se
-                    zakrytými ústy i nosem.<br>S
-                    nachlazením, dýchacími
-                    potížemi či teplotou do
-                    ordinace nechoďte a
-                    telefonicky
-                    se
-                    <b>přeobjednejte</b>.
-                </p>
-
-            </div>
-            <div id="alert-icon">
-                <svg class="alert-icon" viewBox="0 0 24 24" width="35" height="35" aria-hidden="true"><use href="#icon-alert"></use></svg>
-            </div> -->
-
+    <!-- hero -->
+    <div class="relative overflow-hidden">
+        <svg class="pointer-events-none absolute -right-24 -top-24 h-[28rem] w-[28rem] text-iris/[0.06] sm:text-iris/[0.08]"
+            viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="98" fill="none" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="100" cy="100" r="54" fill="none" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="100" cy="100" r="32" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 pt-14 pb-16 sm:pt-20 sm:pb-24 text-center">
+            <h1 class="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl leading-tight text-ink max-w-3xl mx-auto">
+                Vyrábíme pro Vás oční akrylátové protézy již 30 let.
+            </h1>
+        </div>
     </div>
 
-
-
-    <main class="content" id="main-content" tabindex="-1">
-        <div class="practical-info">
-            <div class="pi-content">
-                <div class="objednani">
-                    <div class="header">
-                        <div id="icon">
-                            <svg class="eye" viewBox="0 0 24 24" width="50" height="50" aria-hidden="true"><use href="#icon-eye"></use></svg>
-                        </div>
-                        <div class="title" ,
-                            id="objednat_termin">
-                            <h2>Objednání</h2>
-                        </div>
-                    </div>
-                    <div class="pi-text">
-                        <p>Objednávejte se
-                            telefonicky na&nbsp<a
-                                class="phoneclick"
-                                href="tel:+420722959360"
-                                aria-label="+420 722 959 360"><span>+420
-                                    722 959
-                                    360</span></a>
-                            v&nbspPo - Čt
-                            9:00&nbsp-&nbsp14:00.
-                            <br>Choďte
-                            prosím včas.
-                        </p>
-                        <p>Neobjednané pacienty
-                            nepřijímáme.</p>
-                    </div>
-                </div>
-
-
-                <div class="poukazy">
-                    <div class="header">
-                        <div class="icon">
-                            <svg class="eye" viewBox="0 0 24 24" width="50" height="50" aria-hidden="true"><use href="#icon-eye"></use></svg>
-                        </div>
-                        <div class="title"
-                            id="poukaz">
-                            <h2>Poukazy a platba
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="pi-text">
-                        <p>Pro částečné krytí
-                            pojišťovnou je při
-                            návštěvě potřeba
-                            doložit poukaz
-                            od&nbspočního lékaře
-                            na&nbspbrýle a optické
-                            pomůcky s <b>kódem
-                                4000141</b>.
-                            Platnost poukazu
-                            je
-                            <b>1&nbspměsíc</b>.
-                        </p>
-                        <p>Doklad už neprochází
-                            schvalovacím řízením
-                            pojišťovny.</p>
-                        <p><b>Platba</b> je možná
-                            <b>platební kartou</b> nebo <b>v
-                                hotovosti</b>.</p>
-                        <p>Spolupracujeme se všemi
-                            pojišťovnami.</p>
-                    </div>
-                </div>
+    <!-- aktuálně (kept in markup, toggled on manually for holiday/closure notices) -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <!--
+        <div class="reveal flex flex-col sm:flex-row items-start gap-4 rounded-2xl border-l-4 border-fleck bg-tint p-6 mb-4" role="alert">
+            <svg class="h-8 w-8 shrink-0 text-fleck" aria-hidden="true"><use href="#icon-alert"></use></svg>
+            <div>
+                <h2 class="font-bold text-xl uppercase tracking-wide mb-2">Aktuální sdělení</h2>
+                <p class="text-lg leading-relaxed">DOVOLENÁ v termínu <b>23. - 31. 7. 2026</b></p>
+                <p class="text-lg leading-relaxed">Pacienti musí při vstupu do ordinace předložit <b>potvrzení o očkování</b> nebo <b>negativní PCR test</b> starý max. 24h.</p>
+                <p class="text-lg leading-relaxed">Vstup do ordinace pouze <b>v respirátoru</b> se zakrytými ústy i nosem.<br>S nachlazením, dýchacími potížemi či teplotou do ordinace nechoďte a telefonicky se <b>přeobjednejte</b>.</p>
             </div>
         </div>
+        -->
+    </div>
 
-        <div class="location">
-            <div class="header">
-                <div class="icon">
-                    <svg class="eye" viewBox="0 0 24 24" width="50" height="50" aria-hidden="true"><use href="#icon-eye"></use></svg>
+    <main id="main-content" tabindex="-1" class="max-w-5xl mx-auto px-4 sm:px-6 pb-24 space-y-14 sm:space-y-20">
+
+        <!-- practical info -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <section id="objednat_termin"
+                class="reveal rounded-2xl bg-white border border-hairline p-6 sm:p-8 scroll-mt-24">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-iris-light text-iris ring-1 ring-iris/20">
+                        <svg class="h-7 w-7" aria-hidden="true"><use href="#icon-eye"></use></svg>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold">Objednání</h2>
                 </div>
-                <div class="title" id="kde">
-                    <h2>Kde nás najdete</h2>
+                <p class="text-lg leading-relaxed">
+                    Objednávejte se telefonicky na&nbsp;<a href="tel:+420722959360"
+                        aria-label="+420 722 959 360"
+                        class="font-bold text-iris underline decoration-2 underline-offset-2 hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck rounded">+420&nbsp;722&nbsp;959&nbsp;360</a>
+                    v&nbsp;Po&nbsp;-&nbsp;Čt 9:00&nbsp;-&nbsp;14:00. Choďte prosím včas.
+                </p>
+                <p class="text-lg leading-relaxed mt-4">Neobjednané pacienty nepřijímáme.</p>
+            </section>
+
+            <section id="poukaz" class="reveal rounded-2xl bg-white border border-hairline p-6 sm:p-8 scroll-mt-24">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-iris-light text-iris ring-1 ring-iris/20">
+                        <svg class="h-7 w-7" aria-hidden="true"><use href="#icon-eye"></use></svg>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-bold">Poukazy a platba</h2>
                 </div>
+                <p class="text-lg leading-relaxed">
+                    Pro částečné krytí pojišťovnou je při návštěvě potřeba doložit poukaz od&nbsp;očního lékaře
+                    na&nbsp;brýle a optické pomůcky s <b>kódem 4000141</b>. Platnost poukazu je <b>1&nbsp;měsíc</b>.
+                </p>
+                <p class="text-lg leading-relaxed mt-4">Doklad už neprochází schvalovacím řízením pojišťovny.</p>
+                <p class="text-lg leading-relaxed mt-4"><b>Platba</b> je možná <b>platební kartou</b> nebo
+                    <b>v&nbsp;hotovosti</b>.
+                </p>
+                <p class="text-lg leading-relaxed mt-4">Spolupracujeme se všemi pojišťovnami.</p>
+            </section>
+        </div>
+
+        <!-- location -->
+        <section id="kde" class="reveal scroll-mt-24">
+            <div class="flex items-center gap-4 mb-6">
+                <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-iris-light text-iris ring-1 ring-iris/20">
+                    <svg class="h-7 w-7" aria-hidden="true"><use href="#icon-eye"></use></svg>
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold">Kde nás najdete</h2>
             </div>
-            <div class="location-content">
-                <div class="pi-text">
-                    <address>
-                        <p>Poliklinika Lesná</p>
-                        <p>Halasovo náměstí 1
-                            - 1.
-                            patro, dveře
-                            č. 249</p>
+
+            <div class="grid md:grid-cols-2 gap-6 items-start">
+                <div class="space-y-6">
+                    <address class="not-italic rounded-2xl bg-tint p-6 text-lg leading-relaxed">
+                        <p class="font-bold">Poliklinika Lesná</p>
+                        <p>Halasovo náměstí 1 &ndash; 1. patro, dveře č. 249</p>
                         <p>638 00 Brno</p>
                     </address>
-                    <div
-                        class="route-description">
-                        <p>Při vstupu <b>hlavním
-                                vchodem</b>
-                            se vydejte doleva ke
-                            schodišti a vyjděte do
-                            <b>1.
-                                patra</b>. Po té
-                            projděte
-                            <b>kolem WC doprava
-                                proskleným
-                                koridorem</b>, za
-                            ním odbočte doprava a
-                            na
-                            konci chodby ještě
-                            jednou
-                            doprava. Ordinace je
-                            po pravé straně.
-                            Sledujte značení na
-                            zdech.
-                        </p>
-                        <p><b>Bezbariérový</b>
-                            vstup je možný.</p>
+
+                    <div class="text-lg leading-relaxed space-y-4">
+                        <p>Při vstupu <b>hlavním vchodem</b> se vydejte doleva ke schodišti a vyjděte do <b>1.
+                                patra</b>. Po té projděte <b>kolem WC doprava proskleným koridorem</b>, za ním
+                            odbočte doprava a na konci chodby ještě jednou doprava. Ordinace je po pravé straně.
+                            Sledujte značení na zdech.</p>
+                        <p><b>Bezbariérový</b> vstup je možný.</p>
                         <p>Pohodlné <b>parkování</b> přímo před poliklinikou nebo v přilehlém okolí.</p>
-                        <p id="mhd">Doprava
+
+                        <p class="inline-block rounded-lg bg-iris-light text-iris-dark font-bold px-3 py-1">Doprava
                             MHD</p>
-                        <ul>
-                            <li>Z hlavního
-                                nádraží a od
-                                Hotelu
-                                Grand (autobus.
-                                stanice) - <b>tram
-                                    9 a
-                                    7 (směr Čertova rokle)</b>,
-                                zast.
-                                <b>Halasovo
-                                    nám.</b>
-                                <br>nebo vlakem
-                                směr
-                                Tišnov či Žďár nad Sázavou, 2. zast.
-                                <b>Brno -
-                                    Lesná</b>
-
-                                </li>
-                            <li>Z ÚAN
-                                Zvonařka - <b>bus
-                                    44</b>, zast.
-                                <b>Poliklinika Lesná</b>      
-
-                                </li>
-                            </ul>
-                            
+                        <ul class="list-disc pl-6 space-y-3">
+                            <li>Z hlavního nádraží a od Hotelu Grand (autobus. stanice) &ndash; <b>tram 9 a 7 (směr
+                                    Čertova rokle)</b>, zast. <b>Halasovo nám.</b><br>nebo vlakem směr Tišnov či Žďár
+                                nad Sázavou, 2. zast. <b>Brno &ndash; Lesná</b></li>
+                            <li>Z ÚAN Zvonařka &ndash; <b>bus 44</b>, zast. <b>Poliklinika Lesná</b></li>
+                        </ul>
                     </div>
+                </div>
 
-                </div>
-                <div
-                    class="pi-text image-container">
-                    <img src="./resources/images/planek2.png"
-                        alt="Plánek cesty k ordinaci v 1. patře Polikliniky Lesná (trasa popsána v textu vlevo)">
-                </div>
+                <img src="./resources/images/planek2.png"
+                    alt="Plánek cesty k ordinaci v 1. patře Polikliniky Lesná (trasa popsána v textu vlevo)"
+                    class="w-full rounded-2xl border border-hairline shadow-sm" />
             </div>
-        </div>
+        </section>
 
-        <div class="contact">
-            <div class="header">
-                <div class="icon">
-                    <svg class="eye" viewBox="0 0 24 24" width="50" height="50" aria-hidden="true"><use href="#icon-eye"></use></svg>
-                </div>
-                <div class="title">
-                    <h2 id="kontakt">Kontakt</h2>
-                </div>
+        <!-- contact -->
+        <section id="kontakt" class="reveal rounded-2xl bg-tint p-6 sm:p-10 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-6">
+                <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white text-iris ring-1 ring-iris/20">
+                    <svg class="h-7 w-7" aria-hidden="true"><use href="#icon-eye"></use></svg>
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold">Kontakt</h2>
             </div>
-            <div class="pi-text">
-                <div>
-                    <p>Oční protézy - Jitka
-                        Klíčníková
-                    </p>
-                    <address>
+
+            <div class="grid sm:grid-cols-[1fr_auto] gap-8 items-center">
+                <div class="text-lg leading-relaxed">
+                    <p class="font-bold text-xl mb-3">Oční protézy &ndash; Jitka Klíčníková</p>
+                    <address class="not-italic space-y-1">
                         <p>Poliklinika Lesná</p>
                         <p>Halasovo náměstí 1</p>
                         <p>638 00 Brno</p>
                     </address>
-                    <p id="telephone"><a
-                            class="phoneclick"
-                            href="tel:+420722959360"
-                            aria-label="+420 722 959 360">+420
-                            722 959
-                            360</a></p>
-                    <p>info@ocniprotezy.cz</p>
-                    <p>IČ: 49930770</p>
+                    <p class="mt-4">
+                        <a href="tel:+420722959360" aria-label="+420 722 959 360"
+                            class="inline-flex items-center gap-2 font-bold text-iris underline decoration-2 underline-offset-2 hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck rounded">
+                            <svg class="h-5 w-5" aria-hidden="true"><use href="#icon-phone"></use></svg>
+                            +420&nbsp;722&nbsp;959&nbsp;360
+                        </a>
+                    </p>
+                    <p class="mt-2"><a href="mailto:info@ocniprotezy.cz"
+                            class="font-bold text-iris underline decoration-2 underline-offset-2 hover:text-iris-dark focus-visible:outline focus-visible:outline-4 focus-visible:outline-fleck rounded">info@ocniprotezy.cz</a>
+                    </p>
+                    <p class="mt-2">IČ: 49930770</p>
                 </div>
-                <div class="image-container">
-                    <img src="./resources/images/portrait.png"
-                        height="100%"
-                        alt="Portrét Jitky Klíčníkové">
-                </div>
+
+                <img src="./resources/images/portrait.png" alt="Portrét Jitky Klíčníkové"
+                    class="w-40 sm:w-52 rounded-2xl border border-hairline shadow-sm object-cover" />
             </div>
-        </div>
+        </section>
 
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="copyright">
-                <p>&copy; 2021 Michaela Švancarová<br>Photo by Petr Gabzdyl
-                </p>
-            </div>
+
+    <footer class="border-t border-hairline">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-base text-ink/80">
+            <p>&copy; 2021 Michaela Švancarová</p>
+            <p>Photo by Petr Gabzdyl</p>
         </div>
     </footer>
 
     <script>
         (function () {
             var toggle = document.getElementById('menu-toggle');
-            var dropdown = document.getElementById('dropdown-menu');
+            var panel = document.getElementById('mobile-menu');
+            var iconOpen = document.getElementById('menu-icon-open');
+            var iconClose = document.getElementById('menu-icon-close');
 
             function closeMenu() {
-                dropdown.classList.remove('open');
+                panel.classList.add('hidden');
                 toggle.setAttribute('aria-expanded', 'false');
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
             }
 
             function openMenu() {
-                dropdown.classList.add('open');
+                panel.classList.remove('hidden');
                 toggle.setAttribute('aria-expanded', 'true');
+                iconOpen.classList.add('hidden');
+                iconClose.classList.remove('hidden');
             }
 
             toggle.addEventListener('click', function () {
-                if (dropdown.classList.contains('open')) {
-                    closeMenu();
-                } else {
+                if (panel.classList.contains('hidden')) {
                     openMenu();
+                } else {
+                    closeMenu();
                 }
             });
 
@@ -371,21 +368,33 @@
                 }
             });
 
-            document.addEventListener('click', function (event) {
-                if (!dropdown.contains(event.target) && event.target !== toggle) {
-                    closeMenu();
-                }
+            panel.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
             });
 
-            var menuItems = dropdown.querySelectorAll('a');
-            for (var i = 0; i < menuItems.length; i += 1) {
-                menuItems[i].addEventListener('click', closeMenu);
+            window.matchMedia('(min-width: 768px)').addEventListener('change', function (e) {
+                if (e.matches) closeMenu();
+            });
+        })();
+
+        (function () {
+            var items = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window) || !items.length) {
+                items.forEach(function (el) { el.classList.add('is-visible'); });
+                return;
             }
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            items.forEach(function (el) { observer.observe(el); });
         })();
     </script>
 
 </body>
-
-
 
 </html>
