@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 b {
   font-weight: 700;
 }
@@ -346,7 +342,7 @@ footer {
   font-size: 13px;
   margin: auto;
   padding-right: 20px;
-  /* color: RGBA(255, 255, 255, 0.87); */
+  color: RGBA(255, 255, 255, 0.87);
   line-height: 1.6;
 }
 
