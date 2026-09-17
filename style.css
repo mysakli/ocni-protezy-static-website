@@ -1,5 +1,33 @@
+:root {
+  --color-primary: #3a6d8f;
+  --color-tint: #d8f0f2;
+  --color-tint-dark: #b9dee2;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 1000;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 0 0 5px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 b {
@@ -33,22 +61,6 @@ nav {
   height: 48px;
 }
 
-.logo-subtitle {
-  font-size: 21px;
-  letter-spacing: 19px;
-  font-family: "Open Sans";
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-#colored-logo {
-  color: #578db0;
-  font-weight: 500;
-  font-size: 36px;
-  font-family: "Cinzel Decorative";
-  font-weight: 900;
-}
-
 .phone-and-menu {
   display: flex;
   align-items: center;
@@ -56,7 +68,24 @@ nav {
 
 .dropdown {
   position: relative;
+}
+
+.menu-toggle {
+  font: inherit;
+  font-size: 20px;
+  background: none;
+  border: none;
   cursor: pointer;
+  color: RGBA(33, 33, 33, 0.87);
+  padding: 4px 2px;
+}
+
+.menu-toggle:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle[aria-expanded="true"] {
+  color: var(--color-primary);
 }
 
 .dropdown-content {
@@ -70,42 +99,29 @@ nav {
   right: 70%;
   font-size: 20px;
   line-height: 1.7;
+  list-style: none;
+  margin: 0;
   border: 1px solid RGBA(201, 219, 242, 0.5);
   box-shadow: 0px 2px 4px 1px RGBA(201, 219, 242, 0.5);
 }
 
-/* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
-
-#menu {
-  visibility: hidden;
-}
-
-label:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-#menu:checked ~ .dropdown-content {
+.dropdown-content.open {
   display: block;
 }
 
-#menu:checked ~ label {
-  color: #578db0;
-}
-
 .dropdown-content .navpanel:hover {
-  background-color: #d8f0f2;
+  background-color: var(--color-tint);
   border-radius: 5px;
-  color: #578db0;
+  color: var(--color-primary);
 }
 
 .dropdown-content a {
-  color: #578db0;
+  color: var(--color-primary);
   text-transform: uppercase;
-  /* font-weight: 800; */
 }
 
 .navpanel {
+  display: block;
   padding: 12px 16px;
 }
 
@@ -140,17 +156,16 @@ h4 {
   text-align: justify;
 }
 
-h3 {
+h2 {
   font-weight: 500;
   font-size: 30px;
   margin: 0;
 }
 
-.aktualne {
-  background-color: yellow;
-}
-
 .aktualne-content {
+  background-color: var(--color-tint);
+  border-radius: 10px;
+  max-width: 1000px;
   margin: auto;
   padding: 20px 20px 10px;
   text-align: center;
@@ -159,7 +174,7 @@ h3 {
   align-items: center;
 }
 
-.aktualne-content h3 {
+.aktualne-content h2 {
   text-transform: uppercase;
   padding-bottom: 15px;
   font-size: 16px;
@@ -186,7 +201,7 @@ h3 {
   justify-content: space-between;
 }
 
-.header h3 {
+.header h2 {
   padding: 9px 14px 41px;
   font-weight: 600;
 }
@@ -230,7 +245,7 @@ h3 {
 }
 
 .location address {
-  background-color: #d8f0f2;
+  background-color: var(--color-tint);
   padding: 20px 20px 10px 10px;
   border-radius: 10px;
 }
@@ -273,12 +288,22 @@ ul {
   /* font-size: 14px;*/
 }
 
+.eye {
+  width: 50px;
+  height: 50px;
+}
+
+.alert-icon {
+  width: 35px;
+  height: 35px;
+}
+
 #navod {
-  background-color: #578db0;
+  background-color: var(--color-primary);
   color: RGBA(255, 255, 255, 0.87);
   border-radius: 20px;
   padding: 15px;
-  box-shadow: 5px 5px 5px darkgrey;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 #navod:hover {
@@ -288,7 +313,7 @@ ul {
 .contact {
   margin-left: 10px;
   padding: 30px 20px;
-  background-color: #d8f0f2;
+  background-color: var(--color-tint);
   border-radius: 10px;
   display: block;
   max-width: 450px;
@@ -313,19 +338,19 @@ ul {
 }
 
 .phoneclick {
-  background-color: #d8f0f2;
+  background-color: var(--color-tint);
   border-radius: 5px;
   padding: 5px;
-  color: RGBA(87, 141, 176);
+  color: var(--color-primary);
   white-space: nowrap;
 }
 
 .phoneclick a {
-  color: RGBA(87, 141, 176);
+  color: var(--color-primary);
 }
 
 .phoneclick:hover {
-  background-color: #eff2d5;
+  background-color: var(--color-tint-dark);
 }
 
 .contact .phoneclick {
@@ -342,7 +367,7 @@ footer {
   font-size: 13px;
   margin: auto;
   padding-right: 20px;
-  color: RGBA(255, 255, 255, 0.87);
+  color: RGBA(33, 33, 33, 0.87);
   line-height: 1.6;
 }
 
@@ -373,10 +398,10 @@ footer {
     font-size: 14px;
   }
 
-  h3 {
+  h2 {
     font-size: 20px;
   }
-  .header h3 {
+  .header h2 {
     padding: 14px 14px 46px;
   }
 
